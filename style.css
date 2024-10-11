@@ -1,0 +1,27 @@
+body {
+  background-color:rgb(46, 46, 46)
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+}
+
+.turntable {
+  width: clamp(400px, 75vw, 800px);
+  aspect-ratio: 960 / 595;
+  filter: brightness(100%);    
+}
+
+.turntable:hover {
+  filter: brightness(150%);
+  
+}
+
+.turntable.clicked {
+  transform: scale(1.1);
+}
+
+

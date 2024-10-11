@@ -11,6 +11,10 @@ turntable.addEventListener("mouseup", () => {
   turntable.classList.remove("clicked");
 });
 
+turntable.addEventListener("touchend", () => {
+  turntable.classList.remove("clicked");
+});
+
 turntable.addEventListener("mouseleave", () => {
   turntable.classList.remove("clicked");
 });

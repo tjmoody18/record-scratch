@@ -1,4 +1,4 @@
-let turntable = document.querySelector(".turntable");
+const turntable = document.querySelector(".turntable");
 
 // Prevent mouse drag behavior
 turntable.addEventListener("dragstart", (e) => {

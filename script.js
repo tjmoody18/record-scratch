@@ -9,6 +9,10 @@ turntable.addEventListener("dragstart", (e) => {
 turntable.addEventListener("touchmove", (e) => {
   e.preventDefault();
 });
+// Prevent context menu for long-press on mobile
+turntable.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
 
 
 turntable.addEventListener("mousedown", () => {

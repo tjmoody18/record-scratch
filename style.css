@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color:rgb(46, 46, 46)
 }
@@ -6,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh
+  height: 90vh
 }
 
 .turntable {
@@ -23,6 +29,34 @@ body {
 
 .turntable.clicked {
   transform: scale(1.1);
+}
+
+/* Phone screens */
+@media (max-width: 600px) {
+  .turntable {
+    width: 90vw;
+  }
+}
+
+/* Smaller screens */
+@media (min-width: 601px) and (max-width: 768px) {
+  .turntable {
+    width: 80vw;
+  }
+}
+
+/* Medium screns */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .turntable {
+    width: 70vw; 
+  }
+}
+
+/* larger screens */
+@media (min-width: 1200px) {
+  .turntable {
+    width: 50vw; 
+  }
 }
 
 

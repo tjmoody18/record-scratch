@@ -1,5 +1,15 @@
 let turntable = document.querySelector(".turntable");
 
+// Prevent mouse drag behavior
+turntable.addEventListener("dragstart", (e) => {
+  e.preventDefault();
+})
+
+// Prevent touch drag behavior
+turntable.addEventListener("touchmove", (e) => {
+  e.preventDefault();
+});
+
 
 turntable.addEventListener("mousedown", () => {
   turntable.classList.add("clicked")

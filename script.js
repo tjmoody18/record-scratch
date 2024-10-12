@@ -37,7 +37,7 @@ container.addEventListener("touchstart", (e) => {
 
 turntable.addEventListener("mousedown", () => {
   turntable.classList.add("clicked")
-  let audio = new Audio("https://tjmoody18.github.io/record-scratch/sounds/record_scratch.mp3")
+  let audio = new Audio("https://tjmoody18.github.io/record-scratch/sounds/record_scratch2.mp3")
   audio.play();
 });
 

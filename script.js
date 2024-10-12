@@ -1,7 +1,12 @@
 const turntable = document.querySelector(".turntable");
+const container = document.querySelector(".container");
 
 // Prevent mouse drag behavior
 turntable.addEventListener("dragstart", (e) => {
+  e.preventDefault();
+})
+
+container.addEventListener("dragstart", (e) => {
   e.preventDefault();
 })
 
@@ -9,6 +14,11 @@ turntable.addEventListener("dragstart", (e) => {
 turntable.addEventListener("touchmove", (e) => {
   e.preventDefault();
 });
+
+container.addEventListener("dragstart", (e) => {
+  e.preventDefault();
+})
+
 // Prevent context menu for long-press on mobile
 turntable.addEventListener("contextmenu", (e) => {
   e.preventDefault();

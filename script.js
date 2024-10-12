@@ -24,16 +24,6 @@ turntable.addEventListener("contextmenu", (e) => {
   e.preventDefault();
 });
 
-// Prevent selection on mobile
-turntable.addEventListener("touchstart", (e) => {
-  e.preventDefault();
-});
-
-container.addEventListener("touchstart", (e) => {
-  e.preventDefault();
-});
-
-
 
 turntable.addEventListener("mousedown", () => {
   turntable.classList.add("clicked")
